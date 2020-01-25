@@ -21,10 +21,23 @@
     }
 
     .fit-image {
-        width: 100%;
-        object-fit: cover;
-        height: 400px; /* only if you want fixed height */
+      width: 100%;
+      object-fit: cover;
+      height: 400px; /* only if you want fixed height */
     }
+
+    .margin {
+      margin-top: 50px;
+      margin-bottom: 100px;
+      margin-right: 150px;
+      margin-left: 150px;
+    }
+
+    .card-deck {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    grid-gap: .5rem;
+}
   </style>
 </head>
 <body style="background-color:#f2f2f2">
@@ -59,71 +72,68 @@
   </div>
 </div>
 
-<div class="container-fluid bg-3 text-center">
-  <div class="card-deck">
-
-    <div class="card">
-      <img class="card-img-top fit-image" src="images/sudoku_image.png" alt="Card image cap">
-      <div class="card-body">
-        <h5 class="card-title">Sudoku Visualizer</h5>
-        <p class="card-text">A sudoku game with the solver visualization</p>
-        <span class="badge badge-pill badge-dark">Vue</span>
-        <br>
-        <a href="https://wokegrdws.github.io/sudoku-vue/" target="_blank">Play online</a> | 
-        <a href="https://github.com/wokegrdws/sudoku-vue" target="_blank">Github</a>
-        <p class="card-text"><small class="text-muted">Jan 2020</small></p>
-      </div>
-    </div>
-
-    <div class="card">
-      <img class="card-img-top fit-image" src="images/FindX_mobile_image.png" alt="Card image cap">
-      <div class="card-body">
-        <h5 class="card-title">FindX Mobile</h5>
-        <p class="card-text">A lost and found mobile app. On native Android and React Native (both Android and iOS)</p>
-        <span class="badge badge-pill badge-dark">Android</span>
-        <span class="badge badge-pill badge-dark">React Native</span>
-        <span class="badge badge-pill badge-dark">Firebase</span>
-        <br>
-        <a href="https://youtu.be/3-wEr9zBxzI" target="_blank">Android Video</a> | 
-        <a href="https://youtu.be/v2JE-Xjs3ig" target="_blank">React Native Video</a>
-        <p class="card-text"><small class="text-muted">Oct 2019 - Dec 2019</small></p>
-      </div>
-    </div>
-
-    <div class="card">
-      <img class="card-img-top fit-image" src="images/FindX_website_image.png" alt="Card image cap">
-      <div class="card-body">
-        <h5 class="card-title">FindX</h5>
-        <p class="card-text">A lost and found website that can help people with lost items.</p>
-        <span class="badge badge-pill badge-dark">Flask</span>
-        <span class="badge badge-pill badge-dark">MongoDB</span>
-        <span class="badge badge-pill badge-dark">Google Cloud Platform</span>
-        <br>
-        <a href="https://apt-itemfinder.appspot.com/" target="_blank">Play online</a>
-        <p class="card-text"><small class="text-muted">Sep 2019 - Oct 2019</small></p>
-      </div>
-    </div>
-    
-    <div class="card">
-      <img class="card-img-top fit-image" src="images/my_image.jpeg" alt="Card image cap">
-      <div class="card-body">
-        <h5 class="card-title">Ruiye Wang</h5>
-        <p class="card-text">Who made this site.</p>
-        <span class="badge badge-pill badge-dark">The University of Texas at Austin</span>
-        <span class="badge badge-pill badge-dark">MS in Operations Researcb & Industrial Engineering</span>
-        <span class="badge badge-pill badge-dark">Beihang University</span>
-        <span class="badge badge-pill badge-dark">BE in Mechanical Engineering</span>
-        <span class="badge badge-pill badge-dark">Football</span>
-        <span class="badge badge-pill badge-dark">Basketball</span>
-        <br>
-        <a href="https://github.com/wokegrdws" target="_blank">GitHub</a> | 
-        <a href="https://www.linkedin.com/in/ruiye-wang" target="_blank">LinkedIn</a> | 
-        <a href="https://drive.google.com/open?id=1lb8afxlcSJYNCMq1k-ryxzGOHw-bwiVu" target="_blank">Resume</a>
-        <p class="card-text"><small class="text-muted">Oct 1997</small></p>
-      </div>
+<div class="card-deck margin text-center">
+  <div class="card mb-4">
+    <img class="card-img-top fit-image" src="images/sudoku_image.png" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">Sudoku Visualizer</h5>
+      <p class="card-text">A sudoku game with the solver visualization</p>
+      <span class="badge badge-pill badge-dark">Vue</span>
+      <br>
+      <a href="https://wokegrdws.github.io/sudoku-vue/" target="_blank">Play online</a> | 
+      <a href="https://github.com/wokegrdws/sudoku-vue" target="_blank">Github</a>
+      <p class="card-text"><small class="text-muted">Jan 2020</small></p>
     </div>
   </div>
-</div><br><br>
+
+  <div class="card mb-4">
+    <img class="card-img-top fit-image" src="images/FindX_mobile_image.png" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">FindX Mobile</h5>
+      <p class="card-text">A lost and found mobile app. On native Android and React Native (both Android and iOS)</p>
+      <span class="badge badge-pill badge-dark">Android</span>
+      <span class="badge badge-pill badge-dark">React Native</span>
+      <span class="badge badge-pill badge-dark">Firebase</span>
+      <br>
+      <a href="https://youtu.be/3-wEr9zBxzI" target="_blank">Android Video</a> | 
+      <a href="https://youtu.be/v2JE-Xjs3ig" target="_blank">React Native Video</a>
+      <p class="card-text"><small class="text-muted">Oct 2019 - Dec 2019</small></p>
+    </div>
+  </div>
+
+  <div class="card mb-4">
+    <img class="card-img-top fit-image" src="images/FindX_website_image.png" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">FindX</h5>
+      <p class="card-text">A lost and found website that can help people with lost items.</p>
+      <span class="badge badge-pill badge-dark">Flask</span>
+      <span class="badge badge-pill badge-dark">MongoDB</span>
+      <span class="badge badge-pill badge-dark">Google Cloud Platform</span>
+      <br>
+      <a href="https://apt-itemfinder.appspot.com/" target="_blank">Play online</a>
+      <p class="card-text"><small class="text-muted">Sep 2019 - Oct 2019</small></p>
+    </div>
+  </div>
+  
+  <div class="card mb-4">
+    <img class="card-img-top fit-image" src="images/my_image.jpeg" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">Ruiye Wang</h5>
+      <p class="card-text">Who made this site.</p>
+      <span class="badge badge-pill badge-dark">The University of Texas at Austin</span>
+      <span class="badge badge-pill badge-dark">MS in Operations Researcb & Industrial Engineering</span>
+      <span class="badge badge-pill badge-dark">Beihang University</span>
+      <span class="badge badge-pill badge-dark">BE in Mechanical Engineering</span>
+      <span class="badge badge-pill badge-dark">Football</span>
+      <span class="badge badge-pill badge-dark">Basketball</span>
+      <br>
+      <a href="https://github.com/wokegrdws" target="_blank">GitHub</a> | 
+      <a href="https://www.linkedin.com/in/ruiye-wang" target="_blank">LinkedIn</a> | 
+      <a href="https://drive.google.com/open?id=1lb8afxlcSJYNCMq1k-ryxzGOHw-bwiVu" target="_blank">Resume</a>
+      <p class="card-text"><small class="text-muted">Oct 1997</small></p>
+    </div>
+  </div>
+</div>
 
 <footer class="container-fluid text-center">
   <p>Powered by ...</p>
